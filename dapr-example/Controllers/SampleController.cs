@@ -21,7 +21,9 @@ namespace dapr_example.Controllers
         [HttpPost("notify")]
         public async Task<ActionResult<NotifyMessage>> Notify(NotifyMessage message)
         {
-            return message;
+            // Response.StatusCode = 500;
+            // return message;
+            throw new System.Exception("Error");
         }
     }
 }
